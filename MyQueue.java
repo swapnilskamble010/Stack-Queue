@@ -19,4 +19,7 @@ public class MyQueue {
 		myLnkedList.printMyNodes();
 	}
 
+	public INode pop() {
+		return myLnkedList.pop();
+	}
 }

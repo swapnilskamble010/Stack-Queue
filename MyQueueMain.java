@@ -1,5 +1,6 @@
 package com.bl.ds.stack_queue;
 
+import com.bl.ds.linkedlist.INode;
 import com.bl.ds.linkedlist.MyNode;
 
 public class MyQueueMain {
@@ -16,7 +17,12 @@ public class MyQueueMain {
 		myQueue.append(node3);
 		myQueue.printQueue();
 		System.out.println("----------------------------------");
-		
+		System.out.println("Dequeue from the beginning");
+		INode p1 = myQueue.pop();
+		System.out.println(p1.getKey() + " is removed in 1st pop operation");
+		INode p2 = myQueue.pop();
+		System.out.println(p2.getKey() + " is removed in 2nd pop operation");
+		myQueue.printQueue();
+		System.out.println("----------------------------------");
 	}
-
 }
