@@ -19,4 +19,12 @@ public class MyStack {
 		myLnkedList.printMyNodes();
 	}
 
+	public INode peek() {
+		return myLnkedList.head;
+	}
+
+	public INode pop() {
+		return myLnkedList.pop();
+	}
+
 }
